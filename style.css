@@ -32,3 +32,12 @@ address{
 .about-head{
   margin-top: 15px;
 }
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     background-color: #512DA8;
+}
