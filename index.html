@@ -39,12 +39,15 @@
     <header class="jumbotron about-header">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-8">
+                <div class="col-sm">
                     <h1>Ristorante con Fusion</h1>
-                    <p class="hidden-xs-down">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center">
+                <div class="col-sm">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-sm">
+                  <button type="button" class="btn btn-block" id="btn-jumbo">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -58,16 +61,15 @@
           </ol>
         </div>
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-first">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col-sm col-md flex-last">
-                <h2>Uthappizza</h2>
+            <div class="col-sm col-md flex-first">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                          src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0"> <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-default">$4.99</span>Uthappizza</h2>
+                        <h2 class="mt-0"> <span class="badge badge-danger" style="margin-left: 5px">HOT</span><span class="badge badge-pill badge-default" style="margin-left: 5px; margin-right: 5px">$4.99</span>Uthappizza</h2>
                         <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and
                           Italian pizza, topped with Cerignola olives, ripe vine
                           cherry tomatoes, Vidalia onion, Guntur chillies and
@@ -78,22 +80,28 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-first">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col-sm col-md flex-last">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
+          <div class="col-sm-4 col-md-3 flex-first">
+              <h3>This Month's Promotions</h3>
+          </div>
+        <div class="col-sm col-md flex-last">
+              <div class="media">
+                  <div class="media-body">
+                         <h2 class="mt-0"> <span class="badge badge-danger" style="margin-right: 5px">NEW</span>Weekend Grand Buffet</h2>
+                        <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                  </div>
+                  <div class="media-right">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                          src="img/buffet.png" alt="Buffet">
+                  </div>
+              </div>
         </div>
+      </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 flex-first">
+            <div class="col-sm-4 col-md-3 flex-last">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="col-sm col-md flex-last">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
+            <div class="col-sm col-md flex-first">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                          src="img/alberto.png" alt="Alberto Somayya">
@@ -109,7 +117,73 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-content justify-content-center">
+          <div class="card">
+              <h3 class="card-header bg-edit text-white">Reserve A Table</h3>
+            <div class="card-block">
+              <div class="row" style="margin-top: 10px">
+                  <label class="col-sm-2 flex-first">Number of Guests</label>
+                  <div class="col" style="margin-left: 15px">
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label">
+                            <input class="form-check-input radio-space" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label">
+                            <input class="form-check-input radio-space" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label">
+                            <input class="form-check-input radio-space" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label">
+                            <input class="form-check-input radio-space" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 4
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label">
+                            <input class="form-check-input radio-space" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 5
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label">
+                            <input class="form-check-input radio-space" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 6
+                          </label>
+                        </div>
+                      </div>
+              </div>
+
+              <div class="row" style="margin-top: 20px">
+                <label class="col-sm-2 flex-first">Date and Time</label>
+
+                  <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-left:30px">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" placeholder="Date">
+                  </div>
+
+
+                  <div class="input-group col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-left:30px">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" placeholder="Time">
+                </div>
+            </div>
+            <div class="row" id="reserve-btn">
+                <div class="col-sm-2 flex-first"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <button type="button" class="btn btn-primary">Reserve</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
 
     <footer class="footer">
         <div class="container">
