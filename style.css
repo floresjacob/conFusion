@@ -49,14 +49,3 @@ body{
 .bg-edit {
   background-color: orange;
 }
-
-#reserve-btn {
-  margin-left: 17px;
-  margin-top: 20px;
-}
-
-#btn-jumbo {
-  background-color: orange;
-  color: white;
-  margin-top: 50px;
-}

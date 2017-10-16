@@ -39,15 +39,18 @@
     <header class="jumbotron about-header">
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div class="col">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm-4">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-sm">
-                  <button type="button" class="btn btn-block" id="btn-jumbo">Reserve Table</button>
+                <div class="col-sm-4">
+                  <button type="button" class="btn btn-block btn-sm" style="background-color: orange;
+                  color: white;
+                  margin-top: 50px"
+                  onClick="document.getElementById('reservation').scrollIntoView();">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -119,7 +122,7 @@
         </div>
 
         <div class="row row-content justify-content-center">
-          <div class="card">
+          <div class="card" id="reservation">
               <h3 class="card-header bg-edit text-white">Reserve A Table</h3>
             <div class="card-block">
               <div class="row" style="margin-top: 10px">
@@ -172,7 +175,7 @@
                     <input type="text" class="form-control" placeholder="Time">
                 </div>
             </div>
-            <div class="row" id="reserve-btn">
+            <div class="row" style="margin-left: 17px; margin-top:20px">
                 <div class="col-sm-2 flex-first"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                   <button type="button" class="btn btn-primary">Reserve</button>
