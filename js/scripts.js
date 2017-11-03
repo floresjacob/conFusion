@@ -10,3 +10,35 @@ $("#carousel-button").click(function(){
           $("#carousel-button").children("span").addClass('fa-pause');
       }
   });
+
+
+$("#toggleReserve").click(function(){
+        $("#reserveModal").modal('toggle');
+
+      });
+
+$("#toggleLogin").click(function(){
+        $("#loginModal").modal('toggle');
+
+            });
+
+$("#cancelLogin").click(function(){
+        $("#loginModal").modal('hide');
+
+            });
+
+$("#closeLogin").click(function(){
+              $("#loginModal").modal('hide');
+
+            });
+
+$("#cancelReserve").click(function(){
+        $("#reserveModal").modal('hide');
+
+            });
+
+
+$("#closeReserve").click(function(){
+      $("#reserveModal").modal('hide');
+
+    });

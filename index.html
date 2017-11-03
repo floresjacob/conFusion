@@ -37,7 +37,7 @@
                   <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="toggleLogin">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
               </div>
@@ -51,7 +51,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Reserve Table</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" id="closeReserve">&times;</button>
             </div>
             <div class="modal-body">
 
@@ -120,11 +120,11 @@
                 <div class="row" style="margin-left: 17px; margin-top:20px">
                     <div class="col-sm-2 flex-first"></div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"
+                      <button type="button" class="btn btn-outline-secondary" id="cancelReserve"
                       style="color: black">Cancel</button>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                      <button type="button" class="btn btn-primary">Reserve</button>
+                      <button type="button" class="btn btn-primary" id="reserveButton">Reserve</button>
                     </div>
                 </div>
               </div>
@@ -143,7 +143,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Login </h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" id="closeLogin">&times;</button>
             </div>
             <div class="modal-body">
                 <form class="form-inline">
@@ -163,7 +163,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-default btn-sm" id="cancelLogin">Cancel</button>
                 <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
             </div>
         </div>
@@ -182,9 +182,8 @@
                 </div>
                 <div class="col-sm-4">
                   <a type="button" class="btn btn-warning btn-sm btn-block"
-                    data-toggle="modal" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                     data-placement="bottom" href="#reserveform"
-                      data-target="#reserveModal"
+                    id="toggleReserve"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                      href="#reserveform"
                       style="margin-top:60px">Reserve Table</a>
                 </div>
             </div>
